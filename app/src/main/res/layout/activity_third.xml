@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center"
     android:padding="16dp"
     android:background="@drawable/background"
-    android:layout_marginBottom="8dp"
     android:paddingTop="10dp"
     android:paddingBottom="10dp"
     >
@@ -16,9 +16,9 @@
         android:layout_width="match_parent"
         android:layout_height="200dp"
         android:visibility="gone"
-        android:layout_marginTop="16dp"
+        android:layout_marginBottom="10dp"
         android:layout_centerHorizontal="true"
-        android:src="@drawable/swarzedz" />
+        android:src="@drawable/potato" />
 
     <TextView
         android:id="@+id/questionText"
@@ -29,7 +29,8 @@
         android:textStyle="bold"
         android:gravity="center"
         android:padding="16dp"
-        android:textColor="@color/white"/>
+        android:background="@drawable/question_background"
+        android:layout_marginBottom="20dp"/>
 
     <ImageView
         android:id="@+id/questionImage"
@@ -45,28 +46,28 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Odpowiedź 1"
-        android:padding="10dp" />
+        android:padding="15dp" />
 
     <Button
         android:id="@+id/answer2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Odpowiedź 2"
-        android:padding="10dp" />
+        android:padding="15dp" />
 
     <Button
         android:id="@+id/answer3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Odpowiedź 3"
-        android:padding="10dp" />
+        android:padding="15dp" />
 
     <Button
         android:id="@+id/answer4"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Odpowiedź 4"
-        android:padding="10dp" />
+        android:padding="15dp" />
 
     <Button
         android:id="@+id/nextQuestion"
@@ -74,5 +75,5 @@
         android:layout_height="wrap_content"
         android:text="Następne pytanie"
         android:visibility="gone"
-        android:padding="10dp"/>
+        android:padding="15dp"/>
 </LinearLayout>

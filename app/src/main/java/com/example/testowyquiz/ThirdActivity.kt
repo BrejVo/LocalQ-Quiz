@@ -10,6 +10,7 @@ import android.view.View
 import android.widget.Button
 import android.widget.TextView
 import android.widget.ImageView
+import android.widget.LinearLayout
 import com.example.testowyquiz.databinding.ActivityThirdBinding
 
 class ThirdActivity : AppCompatActivity() {
@@ -147,5 +148,7 @@ class ThirdActivity : AppCompatActivity() {
         nextQuestionButton.setOnClickListener { finish() }
         val endQuizImage = findViewById<ImageView>(R.id.endQuizImage)
         endQuizImage.visibility = View.VISIBLE
+        val mainLayout = findViewById<LinearLayout>(R.id.mainLayout)
+        mainLayout.setBackgroundResource(R.drawable.last_background)
     }
 }
