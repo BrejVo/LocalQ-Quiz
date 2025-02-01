@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp"
+    android:background="@drawable/background"
+    android:layout_marginBottom="8dp"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    >
+    <ImageView
+        android:id="@+id/endQuizImage"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:visibility="gone"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/zawisza" />
+
+    <TextView
+        android:id="@+id/questionText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pytanie"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:padding="16dp"
+        android:textColor="@color/white"/>
+
+    <ImageView
+        android:id="@+id/questionImage"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:visibility="gone"
+        android:layout_gravity="center"
+        android:scaleType="fitCenter"/>
+
+
+    <Button
+        android:id="@+id/answer1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Odpowiedź 1"
+        android:padding="10dp" />
+
+    <Button
+        android:id="@+id/answer2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Odpowiedź 2"
+        android:padding="10dp" />
+
+    <Button
+        android:id="@+id/answer3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Odpowiedź 3"
+        android:padding="10dp" />
+
+    <Button
+        android:id="@+id/answer4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Odpowiedź 4"
+        android:padding="10dp" />
+
+    <Button
+        android:id="@+id/nextQuestion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Następne pytanie"
+        android:visibility="gone"
+        android:padding="10dp"/>
+</LinearLayout>
